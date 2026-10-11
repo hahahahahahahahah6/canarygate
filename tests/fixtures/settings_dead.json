@@ -1,0 +1,1 @@
+{"hooks":{"PreToolUse":[{"hooks":[{"command":"python3 FIXTURES/dead_gate.py","type":"command"}],"matcher":"Bash"}]}}
