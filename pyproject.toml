@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "canarygate"
+version = "0.1.0"
+description = "Hook/gate liveness validator: canary probes + synthetic events that catch wired-but-dead gates"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "hao li" }]
+keywords = ["hooks", "gates", "liveness", "canary", "claude-code", "agents", "ci"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Security",
+  "Topic :: Software Development :: Testing",
+]
+
+[project.scripts]
+canarygate = "canarygate.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/hahahahahahahahah6/canarygate"
+
+[tool.setuptools.packages.find]
+where = ["src"]
